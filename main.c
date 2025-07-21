@@ -310,6 +310,11 @@ int main(void)
 			}
 		}
 
+		// Toggle Blue LED
+		Cy_GPIO_Clr(USER_LED_BLUE_PORT, USER_LED_BLUE_PIN);
+		Cy_SysLib_Delay(5);
+		Cy_GPIO_Set(USER_LED_BLUE_PORT, USER_LED_BLUE_PIN);
+
 		// Delay
 		Cy_SysLib_Delay(1000);
 	}
