@@ -150,7 +150,9 @@ int osp_spi_txrx(uint8_t *tx, int tx_size, uint8_t *rx, int rx_size)
 		if ((bytes_in_rx == 0) && (hal_timer_get_ms() >= TIMEOUT_MS))
 			break;
 
-		if ((bytes_in_rx == last_bytes_in_rx) && (hal_timer_get_ms() >= TIMEOUT_NO_NEW_MS))
+		if ((last_bytes_in_rx != 0)
+				&& (bytes_in_rx == last_bytes_in_rx)
+				&& (hal_timer_get_ms() >= TIMEOUT_NO_NEW_MS))
 			break;
 
 		last_bytes_in_rx = bytes_in_rx;
