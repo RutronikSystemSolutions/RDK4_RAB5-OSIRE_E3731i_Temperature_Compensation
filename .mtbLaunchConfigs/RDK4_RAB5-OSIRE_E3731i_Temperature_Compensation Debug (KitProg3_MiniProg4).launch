@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="ilg.gnumcueclipse.debug.gdbjtag.openocd.launchConfigurationType">
-<stringAttribute key="com.cypress.studio.launch.owner.0" value="8a485fba-fee7-4ce9-8e13-867d836ae4d6"/>
+<stringAttribute key="com.cypress.studio.launch.owner.0" value="531b2c34-3817-4e9a-8987-3dfc0475c54e"/>
 <stringAttribute key="com.cypress.studio.launch.mode" value="debug"/>
 <booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.doContinue" value="true"/>
 <booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.doDebugInRam" value="false"/>
@@ -23,8 +23,8 @@
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.otherInitCommands" value=""/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.otherRunCommands" value="mon psoc4 reset_halt&#13;&#10;flushregs&#13;&#10;mon gdb_sync&#13;&#10;stepi"/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.secondResetType" value="halt"/>
-<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.svdPath" value="${cy_prj_path:8a485fba-fee7-4ce9-8e13-867d836ae4d6}/../mtb_shared/mtb-pdl-cat2/release-v2.16.2/devices/svd/psoc4100smax.svd"/>
-<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageFileName" value="${cy_prj_path:8a485fba-fee7-4ce9-8e13-867d836ae4d6}/build/last_config/rdk4-rab5-osire-e3731i-temperature-compensation.hex"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.svdPath" value="${cy_prj_path:531b2c34-3817-4e9a-8987-3dfc0475c54e}/../mtb_shared/mtb-pdl-cat2/release-v2.16.2/devices/svd/psoc4100smax.svd"/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageFileName" value="${cy_prj_path:531b2c34-3817-4e9a-8987-3dfc0475c54e}/build/last_config/rdk4-rab5-osire-e3731i-temperature-compensation.hex"/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageOffset" value=""/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.ipAddress" value="localhost"/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.jtagDevice" value="GNU MCU OpenOCD"/>
@@ -36,7 +36,7 @@
 <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setResume" value="false"/>
 <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setStopAt" value="true"/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.stopAt" value="main"/>
-<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.symbolsFileName" value="${cy_prj_path:8a485fba-fee7-4ce9-8e13-867d836ae4d6}/build/last_config/rdk4-rab5-osire-e3731i-temperature-compensation.elf"/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.symbolsFileName" value="${cy_prj_path:531b2c34-3817-4e9a-8987-3dfc0475c54e}/build/last_config/rdk4-rab5-osire-e3731i-temperature-compensation.elf"/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.symbolsOffset" value=""/>
 <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useFileForImage" value="true"/>
 <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useFileForSymbols" value="true"/>
@@ -47,7 +47,7 @@
 <booleanAttribute key="org.eclipse.cdt.dsf.gdb.UPDATE_THREADLIST_ON_SUSPEND" value="false"/>
 <intAttribute key="org.eclipse.cdt.launch.ATTR_BUILD_BEFORE_LAUNCH_ATTR" value="2"/>
 <stringAttribute key="org.eclipse.cdt.launch.COREFILE_PATH" value=""/>
-<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="${cy_prj_path:8a485fba-fee7-4ce9-8e13-867d836ae4d6}/build/last_config/rdk4-rab5-osire-e3731i-temperature-compensation.elf"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="${cy_prj_path:531b2c34-3817-4e9a-8987-3dfc0475c54e}/build/last_config/rdk4-rab5-osire-e3731i-temperature-compensation.elf"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="RDK4_RAB5-OSIRE_E3731i_Temperature_Compensation"/>
 <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="true"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">

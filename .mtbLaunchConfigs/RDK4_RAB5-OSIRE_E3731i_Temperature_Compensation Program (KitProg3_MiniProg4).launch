@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.ui.externaltools.ProgramLaunchConfigurationType">
-<stringAttribute key="bad_container_name" value="${cy_prj_path:8a485fba-fee7-4ce9-8e13-867d836ae4d6}\.mtbLaunchConfigs"/>
+<stringAttribute key="bad_container_name" value="${cy_prj_path:531b2c34-3817-4e9a-8987-3dfc0475c54e}\.mtbLaunchConfigs"/>
 <stringAttribute key="org.eclipse.debug.core.ATTR_REFRESH_SCOPE" value="${project}"/>
 <mapAttribute key="org.eclipse.debug.core.environmentVariables">
 <mapEntry key="PATH" value="${cy_tools_path:modus-shell}/bin:${env_var:PATH}"/>
@@ -8,7 +8,7 @@
 <stringAttribute key="org.eclipse.ui.externaltools.ATTR_LAUNCH_CONFIGURATION_BUILD_SCOPE" value="${none}"/>
 <stringAttribute key="org.eclipse.ui.externaltools.ATTR_LOCATION" value="${cy_tools_path:modus-shell}/bin/make${cy_exe_platform_ext}"/>
 <stringAttribute key="org.eclipse.ui.externaltools.ATTR_TOOL_ARGUMENTS" value="-j22 program"/>
-<stringAttribute key="org.eclipse.ui.externaltools.ATTR_WORKING_DIRECTORY" value="${cy_prj_path:8a485fba-fee7-4ce9-8e13-867d836ae4d6}"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_WORKING_DIRECTORY" value="${cy_prj_path:531b2c34-3817-4e9a-8987-3dfc0475c54e}"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/RDK4_RAB5-OSIRE_E3731i_Temperature_Compensation"/>
 </listAttribute>
