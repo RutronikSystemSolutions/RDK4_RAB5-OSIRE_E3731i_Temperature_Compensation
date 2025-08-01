@@ -56,12 +56,12 @@
 #include "cybsp.h"
 #include "cy_retarget_io.h"
 
-#include "osp/aospi/aospi.h"
-#include "osp/aoosp/aoosp_send.h"
-#include "osp/aomw/aomw_color.h"
-#include "hal/osp_spi.h"
-#include "osp/aomw/aomw_otp.h"
-#include "osp/aoosp/aoosp_prt.h"
+#include "osp\aospi\aospi.h"
+#include "osp\aoosp\aoosp_send.h"
+#include "osp\aomw\aomw_color.h"
+#include "hal\osp_spi.h"
+#include "osp\aomw\aomw_otp.h"
+#include "osp\aoosp\aoosp_prt.h"
 
 /**
  * @def OSP_NODE_COUNT
