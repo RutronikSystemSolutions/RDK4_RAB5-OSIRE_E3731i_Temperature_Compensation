@@ -24,7 +24,7 @@ static cy_stc_scb_spi_context_t slave_spi_context;
  *
  * @retval 0 Success / != 0 Error
  */
-static int init_spi_master(void)
+int osp_spi_init_spi_master(void)
 {
     cy_en_scb_spi_status_t result;
 
@@ -85,9 +85,15 @@ static int init_spi_slave(void)
     return 0;
 }
 
+void osp_deinit_spi_master()
+{
+    NVIC_DisableIRQ(mSPI_IRQ);
+    Cy_SCB_SPI_DeInit(mSPI_HW);
+}
+
 int osp_spi_init()
 {
-	if (init_spi_master() != 0)
+	if (osp_spi_init_spi_master() != 0)
 	{
 		return -1;
 	}
@@ -108,6 +114,7 @@ int osp_spi_init()
 int osp_spi_tx(uint8_t *tx, int size)
 {
     Cy_SCB_SPI_Enable(mSPI_HW);
+	
     // Initiate SPI Master write transaction
     Cy_SCB_SPI_WriteArrayBlocking(mSPI_HW, tx, size);
     // Blocking wait for transfer completion
@@ -120,7 +127,7 @@ int osp_spi_tx(uint8_t *tx, int size)
 
 int osp_spi_txrx(uint8_t *tx, int tx_size, uint8_t *rx, int rx_size)
 {
-	static const uint32_t TIMEOUT_MS = 100;
+	static const uint32_t TIMEOUT_MS = 200;
 	static const uint32_t TIMEOUT_NO_NEW_MS = 1;
 
 	// First send

@@ -10,10 +10,14 @@
 
 #include <stdint.h>
 
+int osp_spi_init_spi_master(void);
+
 int osp_spi_init();
 
 int osp_spi_tx(uint8_t *tx, int size);
 
 int osp_spi_txrx(uint8_t *tx, int tx_size, uint8_t *rx, int rx_size);
+
+void osp_deinit_spi_master();
 
 #endif /* HAL_OSP_SPI_H_ */

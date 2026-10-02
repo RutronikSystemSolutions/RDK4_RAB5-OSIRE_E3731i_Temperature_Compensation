@@ -63,6 +63,8 @@
 #include "osp/aomw/aomw_otp.h"
 #include "osp/aoosp/aoosp_prt.h"
 
+#include "sbc_rab5_osire.h"
+
 /**
  * @def OSP_NODE_COUNT
  * @brief For this demo, we use the RAB5-OSIRE board with 5 nodes
@@ -80,6 +82,8 @@ int main(void)
 	{
 		CY_ASSERT(0);
 	}
+
+	sbc_rab5_osire_init();
 
 	// Enable debug output via KitProg UART
 	result = cy_retarget_io_init( KITPROG_TX, KITPROG_RX, 115200);
@@ -116,7 +120,7 @@ int main(void)
 	osp_result = aoosp_send_initbidir(0x1, &last_addr, &node_temperature, &node_status);
 	printf("aoosp_send_initbidir -> %s\r\n", aoresult_to_str(osp_result, 1));
 	if (osp_result != aoresult_ok) for(;;){}
-
+	
 	printf("Last node temperature = %d \t and status = %d \r\n", node_temperature, node_status);
 	printf("Temperature = %d\r\n", aoosp_prt_temp_rgbi(node_temperature));
 	printf("Status = %s\r\n", aoosp_prt_stat_state(node_status));
@@ -315,8 +319,11 @@ int main(void)
 		Cy_SysLib_Delay(5);
 		Cy_GPIO_Set(USER_LED_BLUE_PORT, USER_LED_BLUE_PIN);
 
+		// Feed the watchdog
+		sbc_rab5_osire_feed_wdt();
+
 		// Delay
-		Cy_SysLib_Delay(1000);
+		Cy_SysLib_Delay(500);
 	}
 }
 
